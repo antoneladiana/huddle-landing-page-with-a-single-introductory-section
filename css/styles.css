@@ -58,11 +58,12 @@ button {
     outline: none;
 }
 button:hover {
-    color: #E882E8;
+    background-color: #E882E8;
+    color: #FFFFFF;
 }
-button:focus, button:hover {
-    box-shadow: 0 0 0 3px #E882E8,
-    0 0 0 1.5px #E882E8;
+button:focus{
+    box-shadow: 0 0 0 3px #E882E8, 0 0 0 1.5px #E882E8;
+    color: #E882E8;
 }
 button:active {
     transform: translateY(1px);
@@ -119,6 +120,7 @@ i {
 i:hover {
     color: #E882E8;
 }
+
 /* ----------------------- FOOTER --------------------------- */
 footer {
     font-size: 11px;
