@@ -60,10 +60,12 @@ button {
 button:hover {
     background-color: #E882E8;
     color: #FFFFFF;
+    cursor: pointer;
 }
-button:focus{
+button:focus-visible{
     box-shadow: 0 0 0 3px #E882E8, 0 0 0 1.5px #E882E8;
     color: #E882E8;
+    background-color: #FFFFFF;
 }
 button:active {
     transform: translateY(1px);
@@ -90,23 +92,24 @@ button:active {
 }
 
 /* Social Media */
-i {
-    font-size: 20px;
-    color: #FFFFFF;
-    padding: 10px;
-    text-align: center;    
-}
 .social-media {
     margin-top: 80px;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    column-gap: 20px;
 }
 .icon-wrapper {
     width: 40px;
     height: 40px;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media a {
+    color: #FFFFFF;
+    font-size: 20px;
 }
 .icon-wrapper:nth-of-type(2){
     margin: 0 15px;
@@ -114,7 +117,10 @@ i {
 .icon-wrapper:hover {
     border-color: #E882E8;
 }
-.icon-wrapper a:focus {
+.social-media a:hover {
+    color: #E882E8;
+}
+.social-media a:focus-visible {
     outline: 2px solid #E882E8;
 }
 i:hover {
@@ -125,7 +131,7 @@ i:hover {
 footer {
     font-size: 11px;
     color: #FFFFFF;
-    margin: 10px 0;
+    margin: 30px 0 10px;
     text-align: center;
 }
 footer a {
@@ -134,8 +140,9 @@ footer a {
 footer a:hover {
     text-decoration: none;
 }
-footer a:focus {
+footer a:focus-visible {
     outline: 2px solid #E882E8;
+    text-decoration: none;
 }
 /* ----------------------- MEDIA QUERIES -------------------- */
 
